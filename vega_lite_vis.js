@@ -1,0 +1,9 @@
+var vg_1 = "Vis1Map.json";
+vegaEmbed('#Map', vg_1).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+
+var vg_2 = "Vis2.vega";
+vegaEmbed('#Bubble', vg_2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
