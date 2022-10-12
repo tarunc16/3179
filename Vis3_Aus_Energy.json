@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "height": 400,
+  "vconcat": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/tarunc16/3179/main/Aus_energy_breakdown.csv"
+      },
+      "mark": "bar",
+      "title": "Australian energy production by source (1980 - 2019)",
+      "encoding": {
+        "x": {
+          "timeUnit": "year",
+          "field": "Year",
+          "type": "ordinal",
+          "title": "Year"
+        },
+        "y": {
+          "field": "Energy_production",
+          "aggregate": "sum",
+          "type": "quantitative",
+          "title": "Energy production (BTU)"
+        },
+        "color": {
+          "field": "Energy_type",
+          "type": "nominal",
+          "title": "Energy Type"
+        },
+        "tooltip": [
+          {"field": "Energy_type", "type": "nominal", "title": "Energy source"},
+          {
+            "field": "Energy_production",
+            "type": "quantitative",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/tarunc16/3179/main/Aus_renewables.csv"
+      },
+    "width": 800,
+    "height": 200,
+      "mark": "line",
+      "title": "Australian renewable energy production (1980 - 2019)",
+      "encoding": {
+        "x": {
+          "timeUnit": "year",
+          "field": "Year",
+          "type": "ordinal",
+          "title": "Year"
+        },
+        "y": {
+          "field": "Energy_production",
+          "type": "quantitative",
+          "title": "Energy production (BTU)",
+          "scale": {"domain": [0, 1]}
+        },
+        "tooltip": [
+          {"field": "Year", "type": "ordinal"},
+          {
+            "field": "Energy_production",
+            "type": "quantitative",
+            "format": ".2f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {}
+}
