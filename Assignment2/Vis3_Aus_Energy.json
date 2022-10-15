@@ -5,6 +5,8 @@
       "data": {
         "url": "https://raw.githubusercontent.com/tarunc16/3179/main/Aus_energy_breakdown.csv"
       },
+      "width": 800,
+      "height": 200,
       "mark": "bar",
       "title": "Australian energy production by source (1980 - 2019)",
       "encoding": {
@@ -46,6 +48,8 @@
       "data": {
         "url": "https://raw.githubusercontent.com/tarunc16/3179/main/Aus_renewables.csv"
       },
+      "width": 800,
+       "height": 200,
       "mark": "area",
       "params": [
             {
