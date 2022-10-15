@@ -1,0 +1,59 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Stock prices of 5 Tech Companies over Time.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/tarunc16/3179/main/C02_Emissions/select_countries_renewables.csv"
+    },
+    "params": [],
+    "transform": [
+      {
+        "calculate": "((datum.Energy_production * 1000000)/datum.Population * 10000)/1000000",
+        "as": "Energy Production per capita"
+      }
+    ],
+    "selection": {
+      "country_highlight": {
+        "type": "multi",
+        "fields": ["Country"],
+        "bind": "legend"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "Year", "type": "ordinal"},
+      "y": {
+        "field": "Energy Production per capita",
+        "type": "quantitative",
+        "title": "Energy production per capita (MBU)"
+      },
+      "color": {
+        "field": "Country",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "Australia",
+            "Germany",
+            "United States of America",
+            "Canada",
+            "New Zealand",
+            "Japan",
+            "United Kingdom"
+          ],
+          "range": [
+            "#a6cee3",
+            "#1f78b4",
+            "#b2df8a",
+            "#33a02c",
+            "#fb9a99",
+            "#e31a1c",
+            "#fdbf6f"
+          ]
+        }
+      },
+      "opacity": {
+        "condition": {"selection": "country_highlight", "value": 0.6},
+        "value": 0.2
+      }
+    },
+    "config": {}
+  }
