@@ -1,4 +1,4 @@
-﻿Country,Energy_type,Year,Energy_consumption,Energy_production,GDP,Population,Energy_intensity_per_capita,Energy_intensity_by_GDP,CO2_emission,GDP per capita,CO2 Emissions per capita,Region
+﻿Country,Energy_type,Year,Energy_consumption,Energy_production,GDP,Population,Energy_intensity_per_capita,Energy_intensity_by_GDP,CO2_emission,GDP_per_capita,CO2_emissions_per_capita,Region
 Australia,all_energy_types,1981,3.049885599,4.142083016,389.0065,14957.07,203.909295,7.84019187,216.0070096,26008.20214,14.44179974,#N/A
 Austria,all_energy_types,1981,1.086021611,0.470869747,212.2023,7572.555,143.4154801,5.117859753,55.26293027,28022.54985,7.297791864,Europe
 Belgium,all_energy_types,1981,1.99587973,0.299836636,268.3881,9857.885,202.4653088,7.436543313,139.8782799,27225.72844,14.18948181,Europe
