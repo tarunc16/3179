@@ -3,8 +3,6 @@
     "data": {
       "url": "https://raw.githubusercontent.com/tarunc16/3179/main/C02_Emissions/select_countries_renewables.csv"
     },
-    "height": 800,
-    "width": 600,
     "params": [],
     "transform": [
       {

@@ -9,8 +9,8 @@
       {"filter": "datum.CO2_emissions_per_capita < 15"}
     ],
     "mark": "rect",
-    "width": 600,
-    "height": 300,
+    "width": 800,
+    "height": 600,
     "encoding": {
       "x": {"field": "Year", "type": "ordinal"},
       "y": {
