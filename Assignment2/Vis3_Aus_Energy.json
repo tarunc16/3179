@@ -12,7 +12,8 @@
           "timeUnit": "year",
           "field": "Year",
           "type": "ordinal",
-          "title": "Year"
+          "title": "Year",
+          "scale":{"domain": {"param": "brush"}}
         },
         "y": {
           "field": "Energy_production",
@@ -23,14 +24,20 @@
         "color": {
           "field": "Energy_type",
           "type": "nominal",
-          "title": "Energy Type"
-        },
+          "title": "Energy Type",
+          "scale":{
+            "domain":["coal", "natural_gas","petroleum_n_other_liquids", "renewables_n_other"],
+            "range":["#404040","#8c510a","#fed976","#008837"]
+          },
+          "legend": {"labelExpr": "{'coal': 'Coal', 'natural_gas': 'Natural Gas','petroleum_n_other_liquids':'Petroleum','renewables_n_other': 'Renewables'}[datum.label]"}
+          },
         "tooltip": [
           {"field": "Energy_type", "type": "nominal", "title": "Energy source"},
           {
             "field": "Energy_production",
             "type": "quantitative",
-            "format": ".2f"
+            "format": ".2f",
+            "title": "Energy production in MBU"
           }
         ]
       }
@@ -39,7 +46,13 @@
       "data": {
         "url": "https://raw.githubusercontent.com/tarunc16/3179/main/Aus_renewables.csv"
       },
-      "mark": "line",
+      "mark": "area",
+      "params": [
+            {
+      "name": "brush",
+       "select": {"type": "interval", "encodings": ["x"]}
+     }
+      ],
       "title": "Australian renewable energy production (1980 - 2019)",
       "encoding": {
         "x": {
@@ -54,16 +67,14 @@
           "title": "Energy production (BTU)",
           "scale": {"domain": [0, 1]}
         },
-        "tooltip": [
-          {"field": "Year", "type": "ordinal"},
-          {
-            "field": "Energy_production",
-            "type": "quantitative",
-            "format": ".2f"
-          }
-        ]
+        "color": {
+          "field": "Energy_type",
+          "type": "nominal",
+          "title": "Energy Type"
+        }
+          
+        }
       }
-    }
   ],
   "config": {}
 }
