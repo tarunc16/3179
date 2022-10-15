@@ -4,8 +4,10 @@
   "width": 800,
   "height": 400,
   "projection": {"type": "equalEarth"},
-  "data": {
-    "url": "https://raw.githubusercontent.com/tarunc16/3179/main/ne_110m.json",
+  "layer":[
+    {
+      "data": {
+    "url": "https://raw.githubusercontent.com/tarunc16/3179/main/Assignment2/ne_110m%20(1).json",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
   "transform": [
@@ -44,6 +46,24 @@
         "format": ".2f"
       }
     ]
-  },
+  }
+    },
+    {
+      "data": 
+      {
+        "url": "https://raw.githubusercontent.com/tarunc16/3179/main/Assignment2/ne_110m_ocean.json",
+        "format": {"type":"topojson","feature":"oceans"}
+      },
+      "mark": {"type":"geoshape", "fill": "blue"}
+    },
+    {
+      "data": 
+      {
+        "url": "https://raw.githubusercontent.com/tarunc16/3179/main/Assignment2/ne_110m_graticules_30.json", "format": {"type":"topojson","feature":"ne_110m_graticules_30"}
+      },
+      "mark": {"type":"geoshape","fill":null, "stroke":"lightgray"}
+    }
+
+  ],
   "config": {}
 }
