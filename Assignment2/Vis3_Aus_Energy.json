@@ -24,7 +24,7 @@
         "color": {
           "field": "Energy_type",
           "type": "nominal",
-          "title": "Energy Type",
+          "title": "Energy Source",
           "scale":{
             "domain":["coal", "natural_gas","petroleum_n_other_liquids", "renewables_n_other"],
             "range":["#404040","#8c510a","#fed976","#008837"]

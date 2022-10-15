@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/tarunc16/3179/main/C02_Emissions/OECD_CO2_per_capita.csv"
+  },
+  "title": "OECD countries: CO2 emssions heatmap (1981 - 2019)",
+  "transform": [
+    {"filter": "datum.CO2_emissions_per_capita > 0"},
+    {"filter": "datum.CO2_emissions_per_capita < 15"}
+  ],
+  "mark": "rect",
+  "width": 600,
+  "height": 300,
+  "encoding": {
+    "x": {"field": "Year", "type": "ordinal"},
+    "y": {
+      "bin": {"maxbins": 15},
+      "field": "CO2_emissions_per_capita",
+      "type": "quantitative",
+      "title": "CO2 emssions per capita",
+      "axis": {"format": ""}
+    },
+    "color": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Number of countries"
+    }
+  },
+  "config": {"view": {"stroke": "transparent"}}
+}
