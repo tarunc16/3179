@@ -9,7 +9,7 @@ h1 {
 h2 {
     font-family: 'Inter Tight', sans-serif;
     color: black;
-    font-weight: 250;
+    font-weight: 350;
 }
 
 h3 {
@@ -92,4 +92,14 @@ html, body{
     width: 100vw;
     margin-top: 30px;
     height: 40vw;
+}
+.pure-u-1-4 {
+    width: 100vw;
+    margin-top: 30px;
+    height: 50vw;
+}
+.pure-u-3-4 {
+    width: 100vw;
+    margin-top: 30px;
+    height: 50vw;
 }
