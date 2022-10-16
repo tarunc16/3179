@@ -12,6 +12,10 @@ h2 {
     font-weight: 250;
 }
 
+h3 {
+    font-family: 'Inter Tight', sans-serif
+}
+
 p {
     font-family: 'Inter Tight', sans-serif;
 }
@@ -52,7 +56,6 @@ html, body{
 .bg-para {
     background-color: #B0C6CF;
 }
-
 
 .pure-u-1 img {
     width: 100vw;
