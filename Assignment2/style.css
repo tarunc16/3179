@@ -91,13 +91,6 @@ html, body{
     height: 30vw;
 }
 
-.pure-u-1-4 {
-    width: 100vw;
-    margin-top: 30px;
-    height: 50vw;
-}
-.pure-u-3-4 {
-    width: 100vw;
-    margin-top: 30px;
-    height: 50vw;
+.pad-box {
+    padding: 2em;
 }
