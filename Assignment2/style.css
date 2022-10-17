@@ -70,16 +70,31 @@ html, body{
     margin-top: 30px;
     height: 27vw;
 }
+
+.pure-u-8-24 {
+    width: 100vw;
+    margin-top: 30px;
+    height: 23vw;
+}
+
+.pure-u-16-24 {
+    width: 100vw;
+    margin-top: 30px;
+    height: 23vw;
+}
+
 .pure-u-1 {
+    width: 100vw;
+    margin-top: 30px;
+    height: 8vw;
+}
+
+.pure-u-1-1{
     width: 100vw;
     margin-top: 30px;
     height: 30vw;
 }
-.pure-u-7-9 {
-    width: 100vw;
-    margin-top: 30px;
-    height: 40vw;
-}
+
 .pure-u-1-4 {
     width: 100vw;
     margin-top: 30px;
