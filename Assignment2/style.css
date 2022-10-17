@@ -21,7 +21,7 @@ p {
 }
 
 html, body{
-    background-color: #F6F6F2;
+    background-color: aliceblue;
 }
 
 /* Text Alignment in HTML */
@@ -50,7 +50,7 @@ html, body{
 }
 
 .bg-para {
-    background-color: aliceblue;
+    background-color: #c2edce;
 }
 
 
