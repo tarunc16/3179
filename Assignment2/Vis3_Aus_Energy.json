@@ -6,7 +6,7 @@
         "url": "https://raw.githubusercontent.com/tarunc16/3179/main/Aus_energy_breakdown.csv"
       },
       "width": 600,
-      "height": 150,
+      "height": 200,
       "mark": "bar",
       "title": "Australian energy production by source (1980 - 2019)",
       "encoding": {
