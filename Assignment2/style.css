@@ -21,14 +21,13 @@ p {
 }
 
 html, body{
-    background-color: aliceblue;
+    background-color: #F6F6F2;
 }
 
 /* Text Alignment in HTML */
 
-#l-align {
-    text-align: left;
-    border: 1px solid black;
+#header-box {
+    border: 2px solid black;
     /* to set the border*/
 }
 
@@ -47,12 +46,11 @@ html, body{
 }
 
 .bg-h1 {
-    background-color: #2D4B65;
-    color: white;
+    background-color: #badfe7;
 }
 
 .bg-para {
-    background-color: #B0C6CF;
+    background-color: #c2edce;
 }
 
 
@@ -60,13 +58,13 @@ html, body{
 .pure-u-1-3 {
     width: 100vw;
     margin-top: 30px;
-    height: 30vw;
+    height: 33vw;
 }
 
 .pure-u-2-3 {
     width: 100vw;
     margin-top: 30px;
-    height: 30vw;
+    height: 33vw;
 }
 
 .pure-u-8-24 {
