@@ -34,7 +34,6 @@
           "legend": {"labelExpr": "{'coal': 'Coal', 'natural_gas': 'Natural Gas','petroleum_n_other_liquids':'Petroleum','renewables_n_other': 'Renewables'}[datum.label]"}
           },
         "tooltip": [
-          {"field": "Energy_type", "type": "nominal", "title": "Energy source"},
           {
             "field": "Energy_production",
             "type": "quantitative",

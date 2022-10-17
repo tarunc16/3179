@@ -108,7 +108,7 @@
             {"field": "Country", "type": "nominal"},
             {"field": "CO2 emissions per 100,000", "type": "quantitative", "format": ".2f"},
             {"field": "GDP per capita", "type": "quantitative", "format": ".2f"},
-            {"field": "Energy_intensity_per_capita", "type": "quantitative", "format": ".2f"}
+            {"field": "Energy_intensity_per_capita", "type": "quantitative", "format": ".2f", "title":"Energy intensity per capita"}
           ]
         }
       },
