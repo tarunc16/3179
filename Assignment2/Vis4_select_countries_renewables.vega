@@ -4,7 +4,7 @@
       "url": "https://raw.githubusercontent.com/tarunc16/3179/main/C02_Emissions/select_countries_renewables.csv"
     },
     "width": 800,
-    "height": 500,
+    "height": 600,
     "title":"Renewable energy production for selected countries",
     "params": [],
     "transform": [
