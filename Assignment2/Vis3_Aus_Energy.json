@@ -73,8 +73,7 @@
         },
         "color": {
           "field": "Energy_type",
-          "type": "nominal",
-          "title": "Energy Type"
+          "type": "nominal"
         }
           
         }

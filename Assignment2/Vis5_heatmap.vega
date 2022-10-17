@@ -3,8 +3,8 @@
     "data": {
       "url": "https://raw.githubusercontent.com/tarunc16/3179/main/C02_Emissions/OECD_CO2_per_capita.csv"
     },
-    "width": 800,
-  "height": 400,
+    "width": 600,
+  "height": 300,
     "title": "OECD countries: CO2 emssions heatmap (1981 - 2019)",
     "transform": [
       {"filter": "datum.CO2_emissions_per_capita > 0"},

@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "CO2 Emissions by Country (2018)",
-  "width": 600,
-  "height": 250,
+  "width": 700,
+  "height": 350,
   "projection": {"type": "equalEarth"},
   "layer":[
     {
